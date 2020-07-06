@@ -1,0 +1,59 @@
+# Site
+name: "InfosecIITG"
+title: "InfosecIITG"
+description: "CTF Team of Indian Institute of Technology, Guwahati, India"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ""
+url: ""
+google_analytics: 'UA-168628548-1'
+hyvor_talk_website_id: 1126
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  sal:
+    name: 
+    display_name: 0v3rf10w
+    avatar:
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: pwnk11d13@protonmail.com
+    web: https://0v3rf10w.tech
+    twitter: https://twitter.com/hck4sks
+    description: "Student and CTF Player@InfosecIITG."
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+     
+paginate: 6
+paginate_path: /page:num/
+    
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+adsense: "disabled"
+adsense-data-ad-client: ""
+adsense-data-ad-slot: ""
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
